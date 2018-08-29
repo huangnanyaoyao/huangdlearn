@@ -1,0 +1,13 @@
+.image{
+	width: 200px;
+	border: 1px solid darkgray;
+	float: left;
+	margin: 5px;
+	opacity: 1;
+	text-align: center;
+}
+body{
+	margin: 10px auto;
+	width: 850px;
+	background-color: darkorange;
+}
