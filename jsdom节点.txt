@@ -10,11 +10,11 @@
 		<p name="pn">Hello</p>
 		<p name="pn">Hello</p>
 		<p name="pn">Hello</p>
-		<a href="" id="aid" title="a����">hello</a>
+		<a href="" id="aid" title="a属性">hello</a>
 		<a id="aid2">aid2</a>
 		<ul><li>1</li><li>2</li><li>3</li></ul>
 		<div id="div">
-			<p id="pid">div��p</p>
+			<p id="pid">div的p</p>
 		</div>
 		<script type="text/javascript">
 			function getName(){
@@ -32,7 +32,7 @@
 //			getAttr();
 			function setAttr(){
 				var anode=document.getElementById("aid2");
-				anode.setAttribute("title","��̬����");
+				anode.setAttribute("title","动态设置");
 				var attr =anode.getAttribute("title");
 				alert(attr);
 			}
@@ -41,7 +41,11 @@
 				var childnode=document.getElementsByTagName("ul")[0].childNodes;
 				alert(childnode.length);
 				alert(childnode[0].nodeType);
-
+				//nodeType 属性返回以数字值返回指定节点的节点类型。
+				//
+				//如果节点是元素节点，则 nodeType 属性将返回 1。
+				//
+				//如果节点是属性节点，则 nodeType 属性将返回 2。
 			}
 //			getChildNode();
 		function getParentNode(){
@@ -53,7 +57,7 @@
 			var body=document.body;
 			var input=document.createElement("input");
 			input.type="button";
-			input.value="��ť";
+			input.value="按钮";
 			body.appendChild(input);
 		}
 //		createNode();
@@ -61,7 +65,7 @@
 				var div=document.getElementById("div");
 				var node=document.getElementById("pid");
 				var newnode=document.createElement("p");
-				newnode.innerHTML="��̬����p";
+				newnode.innerHTML="动态添加p";
 				div.insertBefore(newnode,node);
 			}
 //			addNode();
