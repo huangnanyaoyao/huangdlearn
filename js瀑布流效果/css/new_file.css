@@ -1,0 +1,24 @@
+
+*{
+	margin:0px;
+	padding: 0px;
+}
+#container{	    	
+	position: relative;
+	background-color: aquamarine;
+}
+.box{
+	float: left;
+	padding: 5px;
+}
+.box_img{
+	padding: 5px;
+	border: 1px solid gray;
+	box-shadow: 0 0 5px gray;
+	border-radius: 5px;
+}
+.box_img img{
+	width: 150px;
+	height: auto;
+	margin: 0px auto;	
+}
