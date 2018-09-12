@@ -1,0 +1,11 @@
+//允许缓存
+CACHE MANIFEST
+
+CACHE:
+cache.html
+css/cache.css
+js/cache.js
+
+//不允许缓存
+NETWORK:
+js/style.css
